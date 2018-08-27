@@ -4,6 +4,8 @@ services:
     image: prometheus:latest
     ports:
         - 9000:9000
+    volumes:
+      - ${PWD}/prometheus/prometheus.yml
   wordpress:
     image: wordpress:latest
     ports:
