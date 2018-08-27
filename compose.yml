@@ -9,4 +9,8 @@ services:
   wordpress:
     image: wordpress:latest
     ports:
-        - 80:80
+        - 3000:3001
+  grafana:
+    image: grafana/grafana
+    ports:
+        - 80:3000
