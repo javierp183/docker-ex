@@ -26,3 +26,22 @@
 #
 # Author Javier Pereyra <javier.pereyra183@gmail.com>
 
+image:
+	@docker image build -t grafana:latest Grafana/.
+	@docker image build -t prometheus:latest prometheus/.
+	@docker image build -t wordpress:latest WordPress/.
+
+publish:
+	@docker tag grafana:latest grafana:latest
+	@docker tag prometheus:latest prometheus:latest
+	@docker tag wordpress:latest wordpress:latest
+
+
+#Format
+
+fmt:	
+	@yam-lint compose.yml
+
+#Deploy Stack
+deploy:
+	@docker stack deploy --prune --compose-file compose.yml GRAFSTACK
