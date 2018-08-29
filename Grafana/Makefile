@@ -27,7 +27,7 @@
 # Author Javier Pereyra <javierp@ar.ibm.com>
 
 image:
-	@docker image build -t wordpress:latest .
+	@docker image build -t grafana:latest .
 
 publish:
-	@docker tag prometheus:latest wordpress:latest
+	@docker tag grafana:latest grafana:latest
