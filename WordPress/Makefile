@@ -30,4 +30,4 @@ image:
 	@docker image build -t wordpress:latest .
 
 publish:
-	@docker tag prometheus:latest wordpress:latest
+	@docker tag wordpress:latest wordpress:latest

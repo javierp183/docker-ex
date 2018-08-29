@@ -26,8 +26,7 @@
 #
 # Author Javier Pereyra <javierp@ar.ibm.com>
 
-FROM prom/prometheus
-ADD prometheus.yml /etc/prometheus/
+FROM wordpress
 
 LABEL authors="Javier Pereyra"
 LABEL version="0.1"
