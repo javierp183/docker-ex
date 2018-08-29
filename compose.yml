@@ -3,14 +3,14 @@ services:
   prometheus:
     image: prometheus:latest
     ports:
-        - 9000:9000
+        - 9090:9090
     volumes:
       - ${PWD}/prometheus/prometheus.yml
   wordpress:
     image: wordpress:latest
     ports:
-        - 3000:3001
+        - 80:80
   grafana:
     image: grafana/grafana
     ports:
-        - 80:3000
+        - 3000:3000
