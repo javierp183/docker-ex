@@ -26,8 +26,3 @@
 #
 # Author Javier Pereyra <javier.pereyra183@gmail.com>
 
-image:
-	@docker image build -t prometheus:latest .
-
-publish:
-	@docker tag prometheus:latest prometheus:latest

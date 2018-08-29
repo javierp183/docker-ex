@@ -24,7 +24,7 @@
 #  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 #  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
-# Author Javier Pereyra <javierp@ar.ibm.com>
+# Author Javier Pereyra <javier.pereyra183@gmail.com>
 
 image:
 	@docker image build -t grafana:latest .
