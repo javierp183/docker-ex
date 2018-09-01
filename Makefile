@@ -44,4 +44,4 @@ fmt:
 
 #Deploy Stack
 deploy:
-	@docker stack deploy --prune --compose-file compose.yml GRAFSTACK
+	@cd maincompose ; docker-compose up -d ; cd ..

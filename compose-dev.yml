@@ -1,16 +1,21 @@
 version: '3.0'
 services:
   prometheus:
-    image: prometheus:latest
+    image: prometheus
     ports:
         - 9090:9090
     volumes:
       - ${PWD}/prometheus/prometheus.yml
   wordpress:
-    image: wordpress:latest
+    image: wordpress
     ports:
         - 80:80
   grafana:
-    image: grafana/grafana
+    image: grafana
     ports:
         - 3000:3000
+
+networks:
+  frontend:
+    external:
+     name: network_mode
