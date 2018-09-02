@@ -6,9 +6,7 @@ The following docker technology mix, performs the orchestration of "prometheus,w
 
 * Generate docker images
 
-* #cd Grafana ; make image; make publish
-* #cd WordPress ; make image; make publish
-* #cd prometheus ; make image; make publish
+* #make images
+* #make deploy
 
-* Run Docker compose:
-* #docker-compose -f compose.yml up
+* Go to your browser and use Grafana, Prometheus or WordPress
