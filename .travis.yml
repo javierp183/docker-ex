@@ -1,5 +1,7 @@
 language: generic
 
+sudo: required
+
 addons:
   apt:
     packages:
@@ -8,6 +10,5 @@ addons:
       - cmake
 
 script:
-  - systemctl start docker
   - make image
   - make deploy
