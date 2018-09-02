@@ -1,5 +1,7 @@
 # docker-ex
 
+[![Build Status](https://travis-ci.org/javierp183/docker-ex.svg?branch=jpereyra_branch)](https://travis-ci.org/javierp183/docker-ex)
+
 The following docker technology mix, performs the orchestration of "prometheus,wordpress & Grafana" via Docker-Compose. It includes make files for image creation/customization and DockerFile for each one.
 
 * Technical instructions: First of all, clone "GIT" repo: #git clone https://github.com/javierp183/docker-ex.git
