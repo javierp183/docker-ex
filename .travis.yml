@@ -1,0 +1,12 @@
+language: generic
+
+addons:
+  apt:
+    packages:
+      - docker
+      - docker-compose
+      - make
+      - cmake
+
+script:
+  - make image
