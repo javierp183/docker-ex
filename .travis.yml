@@ -8,5 +8,6 @@ addons:
       - cmake
 
 script:
+  - systemctl start docker
   - make image
   - make deploy
