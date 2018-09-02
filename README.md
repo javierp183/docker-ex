@@ -10,3 +10,7 @@ The following docker technology mix, performs the orchestration of "prometheus,w
 * #make deploy
 
 * Go to your browser and use Grafana, Prometheus or WordPress
+
+* -> localhost:80 ( WordPress )
+* -> localhost:3000 ( prometheus )
+* -> localhost:9090 ( Grafana )
