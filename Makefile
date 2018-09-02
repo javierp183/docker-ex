@@ -25,6 +25,7 @@
 #  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 # Author Javier Pereyra <javier.pereyra183@gmail.com>
+# Default branch: jpereyra_branch
 
 image:
 	@docker image build -t grafana:latest Grafana/.
